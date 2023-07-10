@@ -1,0 +1,203 @@
+body,
+ul,
+li {
+    font-family: "Poppins", sans-serif;      
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #141e30 0%, #243b55 100%);
+}
+
+header {
+    background-color: rgb(225, 222, 199);
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    color: green;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+.banner {
+    height: 300px;
+    width: 500px;
+    padding-left: 40%;
+    overflow: hidden;
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.newItem {
+    /*background-color: rgb(225, 222, 199); fundo da imagem de branco */
+    padding: 30px 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#newInput {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newQuantity {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 8%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#newPrice {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 5%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.addBtn {
+    margin-left: 10px;
+    padding: 9px 20px;
+    background-color: rgb(35, 32, 24);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.addBtn:hover {
+    background-color: #2ab53a;
+    color: white;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 14px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+table{
+    background-color: white;
+    width: 50%;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+th:nth-child(1){
+    width: 80%;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
+
+.voltarURL{
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color: rgb(35, 32, 24);    
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+.modal label {
+   font-size: 14px;
+   width: 100%;
+}
+  
+.modal input {
+   width: 100%;
+   outline: none;
+   padding: 5px 10px; 
+   width: 100%;
+   margin-bottom: 20px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+}
+  
+.modal button {
+   width: 100%;
+   margin: 10px auto;
+   outline: none;
+   border-radius: 20px; 
+   padding: 5px 10px; 
+   width: 100%;
+   border: none;
+   background-color: rgb(57, 57, 226);
+   color: white;
+}  
+  
+.active {
+   display: flex;
+}
+
+    
+

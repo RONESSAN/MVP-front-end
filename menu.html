@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    
+    <!-- TIPO DE LETRA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"/>    
+    
+      <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="
+            sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!-- CSS -->            
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <div class="abreMenu">
+        <span class="material-icons">menu_open</span>        
+    </div>
+    <nav class="menuLateral">
+        <div class="titulo">Gescom Web<span class="material-icons fechaMenu">close</span></div> 
+        <ul>
+            <li><a href="#" class="cadastro">Cadastro<span class="material-icons seta1">arrow_right</span></a>
+                <ul class="itensCadastro">
+                    <li><a href="cadastro_produto.html">Produtos</a></li>
+                    <li><a href="cadastro_usuario.html">Usuários</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="opcoes">Opções<span class="material-icons seta2">arrow_right</span></a>
+                <ul class="itensOpcoes">
+                    <li><a href="login.html">Sair</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <script src="js/menu.js"></script>   
+</body>
+</html>
